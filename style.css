@@ -42,6 +42,13 @@ aside {
     color: #ffffff;
 }
 
+aside header img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
 aside h2 {
     width: 100%;
     text-align: center;
