@@ -37,9 +37,13 @@ main {
 
 aside {
     width: 50%;
+    min-height: 100%;
     padding: 5%;
     background-color: #008080;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 aside header img {
@@ -55,6 +59,13 @@ aside h2 {
     background-color: #ffffff;
     padding: 2%;
     color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+}
+
+aside li {
+    list-style-type: none;
 }
 
 aside a {
@@ -70,3 +81,14 @@ section {
     width: auto;
     padding: 5%;
 }
+
+section h2 {
+    width: 100%;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* .category li:nth-child(1) {
+    list-style-type: none;
+} */
