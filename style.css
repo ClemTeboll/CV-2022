@@ -95,6 +95,16 @@ section {
     padding: 0% 5% 5% 5%;
 }
 
+section a {
+    text-decoration: none;
+    color: #008080;
+    font-weight: bold;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
 .category-name {
     display: flex;
     flex-direction: row;
@@ -102,7 +112,6 @@ section {
 }
 
 .category-name h2 {
-    width: 100%;
     color: #000000;
     font-weight: bold;
     text-transform: uppercase;
@@ -222,4 +231,89 @@ aside a:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+@media all and (max-width: 992px) {
+    .header-image img {
+        width: 10em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.3em;
+    }
+}
+
+@media all and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    .header-image {
+        width: 100%;
+    }
+
+    .header-image img {
+        width: 10em;
+    }
+
+    .header-text {
+        width: 100%;
+        margin: 5% 0% 5% 0%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        color: #373535;
+        margin-bottom: 2%;
+    }
+    
+    header hr {
+        margin: auto;
+        width: 20%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .category-name {
+        justify-content: center;
+    }
+
+    .list-item {
+        width: 100%;
+    }
+
+    .date-and-location {
+        margin-right: 5%;
+    }
+    
+    .description {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+        padding-top: 5%;
+    }
+
+    aside div {
+        margin-bottom: 5%;
+    }
 }
