@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif!important;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -24,7 +23,8 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	/* font-family: 'Roboto'; */
+    font-family: 'Lato', sans-serif!important;
+    max-width: 1440px;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -32,21 +32,39 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-main {
-    max-width: 1440px;
+header {
     width: 100%;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
 }
 
-section {
-    width: auto;
+.header-image {
+    width: 30%;
+    background-color: #008080;
     padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-image img {
+    width: 15em;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.header-text {
+    width: 70%;
+    padding-left: 5%;
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     text-transform: uppercase;
+    margin-bottom: 2%;
 }
 
 h1 span {
@@ -54,14 +72,27 @@ h1 span {
 }
 
 header p {
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: bold;
     color: #373535;
+    margin-bottom: 2%;
 }
 
 header hr {
     margin-left: 0;
     width: 20%;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+section {
+    width: 70%;
+    padding: 0% 5% 5% 5%;
 }
 
 .category-name {
@@ -97,8 +128,14 @@ hr {
 .list-item {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: baseline;
     margin-bottom: 3%;
+}
+
+.date-and-location {
+    margin-left: 2%;
+    margin-right: 10%;
 }
 
 .description {
@@ -126,11 +163,6 @@ hr {
     list-style-type: square;
 }
 
-/* .category li:nth-child(1) {
-    list-style-type: none;
-} */
-
-
 .category-references {
     list-style-type: none;
     font-size: 1em;
@@ -138,26 +170,14 @@ hr {
 }
 
 aside {
-    width: 50%;
+    width: 30%;
     min-height: 100%;
-    padding: 5%;
+    padding: 0% 5% 5% 5%;
     background-color: #008080;
     color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-aside header {
-    display: flex;
-    justify-content: center;
-}
-
-aside header img {
-    width: 90%;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
 }
 
 aside h2 {
